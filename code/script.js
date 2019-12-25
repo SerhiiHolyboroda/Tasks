@@ -42,7 +42,7 @@ b.style.display  = 'block' ;
 //     document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
 //        let opened = window.open("");
 //opened.document.write(` <html><head><title> ${localStorage.getItem('username')} </title></head><body>test</body></html> `);
-      window.location.replace(" tasks.html"  );
+      window.location.replace(" pages/tasks.html"  );
       } else {
      document.getElementById('welcomeMessage').innerHTML = "Invalid Log-in!";
     }
