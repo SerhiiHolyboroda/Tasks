@@ -6,7 +6,7 @@ let butreg = document.querySelector(".but-reg");
 let butlog = document.querySelector(".but-log");
 let reglog = document.querySelector(".reg-log");
 let regpass = document.querySelector(".reg-pass"); 
-let loglog = document.querySelector(".log-pass");
+let loglog = document.querySelector(".log-log");
 let logpass = document.querySelector(".log-pass");
 //b.style.visibility = 'hidden';
  
@@ -34,6 +34,7 @@ b.style.display  = 'block' ;
       localStorage.setItem('username', reglog.value );
     localStorage.setItem('password', regpass.value);
      console.log(localStorage.getItem('username'))
+     console.log(localStorage.getItem('password'))
      })
 
     butlog .addEventListener('click', function(){
