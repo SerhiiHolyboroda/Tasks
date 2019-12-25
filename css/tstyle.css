@@ -1,0 +1,7 @@
+body{
+    background-image: url('../img/zolushka3.gif');
+    height: 500px;
+    width: 500px;
+         background-position: cover;
+    background-position: center;
+}
