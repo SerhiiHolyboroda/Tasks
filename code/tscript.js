@@ -1,24 +1,46 @@
-let f1 = document.forms.f1
-let but = f1.elements.but1
-let hh = f1.elements.inpt
-let tarea = f1.elements.ttt
  
+
+
+
+
+let f1 =  document.forms['f1'];
+let hide = f1.elements['hide'];
+let hide1 = f1.elements['hide1'];
+let edit = f1.elements['edit'];
+let style = f1.elements['style'];
+let but = f1.elements['but'];
+let a = f1.hide.value ;
+let hidediv = document.querySelector('.hidediv')
+//hidediv.style.display = 'none'
+let div1 = document.querySelector('#div1');
+console.log(div1.innerHTML);
+// hide.value = div1.innerTEXT;
+
+// a.innerHTML += '<p>Lorem ipsum dolor sit amet</p>';
+// console.log(a);
+
+hide.style.display = 'none';
+but.style.display = 'none';
+hide1.style.display = 'none';
+edit.addEventListener('click', function(){
+    hide.style.display = 'block';
+    hide1.style.display = 'none';
+    but.style.display = 'block';
+    hide.value = div1.innerHTML;
+
+})
+
+style.addEventListener('click', function(){
+    hide1.style.display = 'block';
+    hide.style.display = 'none';
+    but.style.display = 'none';
+})
+
+
 but.addEventListener('click', function(){
-//    
-//   let div = document.createElement('div');
-//  div.innerHTML  = `<strong>${hh.value}</strong> `;
-//  div.innerHTML  = `<p>${tarea.value}</p> `;
-//   document.body.append(div);
-    
-x()
-}) 
-let x =()=>{
-let div = document.createElement('div');
-  div.className = "alert";
-  div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 
- return document.body.appendChild(div);
-}
+    div1.innerHTML  = hide.value ;
 
- 
+})
+
  
